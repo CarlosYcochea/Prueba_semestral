@@ -184,7 +184,7 @@ section {
 
 .detalles {
     position: relative;
-    width: 120%;
+    width: 150%;
     padding: 20px;
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -200,4 +200,44 @@ section {
     padding: 20px;
     box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
     border-radius: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.header h2 {
+    font-weight: 700;
+    color: var(--purple);
+}
+
+.detalles table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.detalles .clientes table tr {
+    color: var(--black);
+    border-radius: 1px solid rgba(0,0,0,0.1);
+}
+
+.detalles .clientes table tr:hover {
+    background: var(--purple);
+    color: var(--white);
+}
+
+.detalles .clientes table tr td {
+    padding: 10px;
+}
+
+.detalles .clientes table tr td:last-child {
+    text-align: center;
+}
+
+.detalles .clientes table tr td:nth-child(3) {
+    text-align: center;
 }
